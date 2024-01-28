@@ -28,6 +28,7 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
+        {!admin && <Redirect to="/login" />}
         {admin && (
           <>
             <Topbar />
